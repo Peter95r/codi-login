@@ -1,0 +1,169 @@
+:root {
+  --main-color: #c1292e;
+  --secondary-color: #fa6169;
+  --text-color: #35353a;
+  --white: #edf4ed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+.main {
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-content {
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--secondary-color) 100%
+  );
+  border-radius: 31px;
+  z-index: 999;
+  transition: ease-in-out all 400ms;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.welcom {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.undertext {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 4rem;
+}
+.btn.we {
+  background: transparent;
+  border: 2px solid #fff;
+}
+.mla {
+  transform: translateX(550px);
+}
+.btn:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+  display: flex;
+  position: relative;
+}
+
+.create-account {
+  font-size: 52px;
+  /* font-weight: 800; */
+  margin-bottom: 3rem;
+}
+.form,
+.login {
+  width: 45%;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0 6rem 0;
+  transition: all 300ms;
+}
+.w-55 {
+  width: 55%;
+}
+.hidden {
+  opacity: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 0.75rem 1rem;
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+}
+.forgot-password:link,
+.forgot-password:visited {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: auto;
+  display: block;
+}
+.btn {
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--secondary-color) 100%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.media-logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: all 100ms;
+}
+.media-logo:hover {
+  transform: translateY(-4px);
+}
+.facebook {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Codi</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="slider-content">
+          <h2 class="welcom">Welcom bij Lorem !</h2>
+          <p class="undertext">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatibus sapiente, aut error cumque impedit facilis hic tempora?
+          </p>
+          <button class="btn we">Inloggen</button>
+        </div>
+        <div class="login hidden">
+          <h2 class="create-account">Inloggen</h2>
+          <div class="social-media">
+            <ion-icon class="media-logo" name="logo-google"></ion-icon>
+            <ion-icon class="media-logo" name="logo-twitter"></ion-icon>
+            <div class="media-logo facebook" class="facebook-logo">f</div>
+          </div>
+          <div class="form-group">
+            <label class="label" for="uname">Username</label>
+            <input
+              class="form-control uName-login"
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="label" for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control password-login"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <a class="forgot-password" href="">Password fregeten?</a>
+
+          <button type="submit" class="btn s-up">Inloggen</button>
+        </div>
+        <div class="form w-55">
+          <h2 class="create-account">Create Account</h2>
+          <div class="form-group">
+            <label class="label" for="uname">Username</label>
+            <input
+              class="form-control user-name"
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="label" for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control email-address"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group mb-1">
+            <label class="label" for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control password"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+
+          <button type="submit" class="btn s-in">Aanmelden</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
